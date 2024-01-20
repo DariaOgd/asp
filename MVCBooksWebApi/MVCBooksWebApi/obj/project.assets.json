@@ -4433,11 +4433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daria\\Desktop\\asp-project\\MVCBooksWebApi\\MVCBooksWebApi\\MVCBooksWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\daria\\Desktop\\asp-project\\asp\\MVCBooksWebApi\\MVCBooksWebApi\\MVCBooksWebApi.csproj",
       "projectName": "MVCBooksWebApi",
-      "projectPath": "C:\\Users\\daria\\Desktop\\asp-project\\MVCBooksWebApi\\MVCBooksWebApi\\MVCBooksWebApi.csproj",
+      "projectPath": "C:\\Users\\daria\\Desktop\\asp-project\\asp\\MVCBooksWebApi\\MVCBooksWebApi\\MVCBooksWebApi.csproj",
       "packagesPath": "C:\\Users\\daria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daria\\Desktop\\asp-project\\MVCBooksWebApi\\MVCBooksWebApi\\obj\\",
+      "outputPath": "C:\\Users\\daria\\Desktop\\asp-project\\asp\\MVCBooksWebApi\\MVCBooksWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

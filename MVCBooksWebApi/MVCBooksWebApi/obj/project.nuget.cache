@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QhdQItp6zmGauDZwNvwaGDRw9Tt/0FFohbvGdK+RBPn1kpAmug8cKodUbaE5+0YCNUqB4kLVKGGOTgIHnxi7RQ==",
+  "dgSpecHash": "dBFEtGzZFeCgrOaa4cQJ5tsUtfwouk+ThJnqhVXEGt1NOkKem94r55p9L5OvEEJnjLOzBsES5ZUF+PYmExFLOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daria\\Desktop\\asp-project\\MVCBooksWebApi\\MVCBooksWebApi\\MVCBooksWebApi.csproj",
+  "projectFilePath": "C:\\Users\\daria\\Desktop\\asp-project\\asp\\MVCBooksWebApi\\MVCBooksWebApi\\MVCBooksWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\daria\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
