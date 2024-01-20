@@ -1,0 +1,47 @@
+﻿@model List<MVCBooksWebApi.Models.Domain.Book>
+
+@{
+    ViewData["Title"] = "Book List";
+}
+
+<h1>Książki</h1>
+
+<form method="get" action="@Url.Action("Index", "Books")">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Wyszkuaj książki" name="searchTerm">
+        <button class="btn btn-outline-secondary" type="submit">Wyszukaj</button>
+    </div>
+</form>
+<form method="get" action="@Url.Action("Index", "Books")">
+    <button class="btn btn-outline-secondary" type="submit">Wszystkie</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th>ISBN</th>
+            <th>Liczba stron</th>
+            <th>Kategoria</th>
+            <th>Ilość</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>@book.ISBN</td>
+                <td>@book.Pages</td>
+                <td>@book.Category</td>
+                <td>@book.Amount</td>
+                <td><a href="Books/View/@book.Id">Więcej</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

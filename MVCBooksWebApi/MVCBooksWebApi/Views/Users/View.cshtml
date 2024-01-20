@@ -1,0 +1,32 @@
+﻿@model MVCBooksWebApi.Models.UpdateUserViewModel
+
+<h1>Zaaktualizuj dane</h1>
+<form method="post" action="Edit">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nazwa użytkownika</label>
+        <input type="text" class="form-control" asp-for="Username">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Hasło</label>
+        <input type="password" class="form-control" asp-for="Password">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Rola</label>
+        <select asp-for="Role" class="form-control">
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+            <!-- Add more role options as needed -->
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Aktualizuj</button>
+
+    <button type="submit" class="btn btn-danger"
+            asp-action="Delete"
+            asp-controller="Users">
+        Usuń
+    </button>
+</form>

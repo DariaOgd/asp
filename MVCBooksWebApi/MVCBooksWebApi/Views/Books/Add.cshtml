@@ -1,0 +1,42 @@
+﻿@model MVCBooksWebApi.Models.AddBookViewModel
+
+@{
+    ViewData["Title"] = "Dodaj Książkę";
+}
+
+<h1>Dodaj Książkę</h1>
+
+@if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">Tytuł</label>
+        <input type="text" class="form-control" asp-for="Title">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Autor</label>
+        <input type="text" class="form-control" asp-for="Author">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">ISBN</label>
+        <input type="text" class="form-control" asp-for="ISBN">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ilość stron</label>
+        <input type="number" class="form-control" asp-for="Pages">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Kategoria</label>
+        <input type="text" class="form-control" asp-for="Category" autocomplete="off">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ilość</label>
+        <input type="number" class="form-control" asp-for="Amount">
+    </div>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>

@@ -1,0 +1,30 @@
+﻿@model MVCBooksWebApi.Models.AddUserViewModel
+
+<h1>Dodaj użytkownika</h1>
+
+<form method="post" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Username">Nazwa użytkownika</label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="text-danger">@TempData["ErrorMessage"]</div>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Hasło</label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Role">Rola:</label>
+        <select asp-for="Role" class="form-control">
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+        </select>
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>
