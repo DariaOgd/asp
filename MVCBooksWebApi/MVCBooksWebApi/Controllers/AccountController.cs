@@ -55,7 +55,7 @@ public class AccountController : Controller
         }
 
         // Invalid login, provide an error message
-        ViewData["ErrorMessage"] = "Invalid username or password.";
+        ViewData["ErrorMessage"] = "Niepoprawne login lub hasło.";
         return View();
     }
 

@@ -1,29 +1,28 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@model List<MVCBooksWebApi.Models.Domain.User>
+﻿@model List<MVCBooksWebApi.Models.Domain.User>
 
 <h1>Użytkownicy</h1>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Nazwa użytkownika</th>
-            <th>Hasło</th>
-            <th> </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
             <tr>
-                <td>@user.Id</td>
-                <td>@user.Username</td>
-                <td>••••••••</td>
-                <td><a href="Users/View/@user.Id">Więcej</a></td>
+                <th>Id</th>
+                <th>Nazwa użytkownika</th>
+                <th>Hasło</th>
+                <th>Rola</th>
+                <th> </th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>••••••••</td>
+                    <td>@user.Role</td>
+                    <td><a href="Users/View/@user.Id">Więcej</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
