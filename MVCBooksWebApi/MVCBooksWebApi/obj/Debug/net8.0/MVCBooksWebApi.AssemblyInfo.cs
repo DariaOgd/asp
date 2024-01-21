@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCBooksWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f64a5ccab8eb3652f1f599a43a3ecc5e2809ae4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b30d5e9ade5cea45bd2842ad6ec25f5f5b61d86")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCBooksWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCBooksWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

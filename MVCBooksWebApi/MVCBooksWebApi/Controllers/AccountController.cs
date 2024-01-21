@@ -19,7 +19,6 @@ public class AccountController : Controller
     [HttpGet]
     public IActionResult Login()
     {
-        // Your login view logic
         return View();
     }
 
@@ -34,8 +33,8 @@ public class AccountController : Controller
             var claims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, user.Username),
-            new Claim(ClaimTypes.Role, loggedInUser.Role), // Include the user's role
-            // Add additional claims if needed
+            new Claim(ClaimTypes.Role, loggedInUser.Role), 
+      
         };
 
             var claimsIdentity = new ClaimsIdentity(
@@ -43,7 +42,7 @@ public class AccountController : Controller
 
             var authProperties = new AuthenticationProperties
             {
-                // Customize properties if needed
+       
             };
 
             await HttpContext.SignInAsync(
@@ -54,7 +53,6 @@ public class AccountController : Controller
             return RedirectToAction("Index", "Books");
         }
 
-        // Invalid login, provide an error message
         ViewData["ErrorMessage"] = "Niepoprawne login lub hasło.";
         return View();
     }

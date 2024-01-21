@@ -36,12 +36,12 @@ namespace MVCBooksWebApi.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Check if a user with the same username already exists
+               
                 var existingUser = await _mvcBooksDbContext.Users.FirstOrDefaultAsync(u => u.Username == userViewModel.Username);
 
                 if (existingUser != null)
                 {
-                    // Display an error message
+                    
                     TempData["ErrorMessage"] = "Użytkownik o takim loginie już istnieje";
                     return View(userViewModel);
                 }
@@ -104,6 +104,7 @@ namespace MVCBooksWebApi.Controllers
             return RedirectToAction("Index");
         }
 
+       
         [HttpPost]
         public async Task<IActionResult> Delete(UpdateUserViewModel model)
         {
@@ -111,6 +112,20 @@ namespace MVCBooksWebApi.Controllers
 
             if (user != null)
             {
+               
+                if (user.Role == "Admin")
+                {
+                   
+                    var adminCount = await _mvcBooksDbContext.Users.CountAsync(u => u.Role == "Admin");
+
+                    if (adminCount <= 1)
+                    {
+                       
+                        TempData["ErrorMessage"] = "Nie można usunąć jedynego administratora.";
+                        return RedirectToAction("Index");
+                    }
+                }
+
                 _mvcBooksDbContext.Users.Remove(user);
                 await _mvcBooksDbContext.SaveChangesAsync();
                 return RedirectToAction("Index");

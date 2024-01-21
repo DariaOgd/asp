@@ -24,12 +24,12 @@ namespace MVCBooksWebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(string searchTerm)
         {
-            // Get all books by default or filter based on search term
+            
             IQueryable<Book> query = mvcBooksDbContext.Books;
 
             if (!string.IsNullOrEmpty(searchTerm))
             {
-                // Apply search filter if search term is provided
+           
                 searchTerm = searchTerm.ToLower();
                 query = query.Where(b =>
                     b.Title.ToLower().Contains(searchTerm) ||
@@ -59,7 +59,7 @@ namespace MVCBooksWebApi.Controllers
 
             if (existingBookWithISBN != null)
             {
-                // Book with the same ISBN already exists
+        
                 TempData["ErrorMessage"] = "ISBN już istnieje w bazie";
                 return View("Add", addBookRequest);
             }

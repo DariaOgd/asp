@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCBooksWebApi.Migrations
 {
     [DbContext(typeof(MvcBooksDbContext))]
-    [Migration("20240120183115_Initial")]
-    partial class Initial
+    [Migration("20240121152337_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
