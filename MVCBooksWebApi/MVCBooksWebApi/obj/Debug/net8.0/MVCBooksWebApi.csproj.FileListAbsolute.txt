@@ -426,3 +426,9 @@ C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\obj\Debug\n
 C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\obj\Debug\net8.0\MVCBooksWebApi.pdb
 C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\obj\Debug\net8.0\MVCBooksWebApi.genruntimeconfig.cache
 C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\obj\Debug\net8.0\ref\MVCBooksWebApi.dll
+C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\bin\Debug\net8.0\xunit.abstractions.dll
+C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\bin\Debug\net8.0\xunit.assert.dll
+C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\bin\Debug\net8.0\xunit.core.dll
+C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\bin\Debug\net8.0\xunit.execution.dotnet.dll
+C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\daria\Desktop\asp-project\asp\MVCBooksWebApi\MVCBooksWebApi\bin\Debug\net8.0\Moq.dll
